@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Ditznime - Streaming Anime Gratis</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Ditz<span>nime</span></h1>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#ongoing"><i class="fas fa-play-circle"></i> Ongoing</a></li>
+                <li><a href="#complete"><i class="fas fa-check-circle"></i> Complete</a></li>
+                <li><a href="#schedule"><i class="fas fa-calendar"></i> Jadwal</a></li>
+                <li><a href="#genre"><i class="fas fa-tags"></i> Genre</a></li>
+            </ul>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Cari anime...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+        </nav>
+
+        <!-- Hero Section with GIF -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1 class="animate-title">Selamat Datang di <span>Ditznime</span></h1>
+                <p class="animate-text">Nonton anime gratis, streaming lancar, kualitas mantap!</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-film"></i>
+                        <span>1000+ Anime</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-play"></i>
+                        <span>HD Quality</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Update Daily</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-gif">
+                <img src="public/anime-gif.gif" alt="Anime GIF" id="heroGif">
+            </div>
+        </section>
+
+        <!-- Ongoing Anime Section -->
+        <section class="anime-section" id="ongoing">
+            <div class="section-header">
+                <h2><i class="fas fa-fire"></i> Sedang Tayang</h2>
+                <a href="#ongoing-all" class="view-all">Lihat Semua <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="anime-grid" id="ongoingGrid">
+                <!-- Data dari JS -->
+            </div>
+        </section>
+
+        <!-- Complete Anime Section -->
+        <section class="anime-section" id="complete">
+            <div class="section-header">
+                <h2><i class="fas fa-check-circle"></i> Anime Tamat</h2>
+                <a href="#complete-all" class="view-all">Lihat Semua <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="anime-grid" id="completeGrid">
+                <!-- Data dari JS -->
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section class="schedule-section" id="schedule">
+            <h2><i class="fas fa-calendar-alt"></i> Jadwal Rilis</h2>
+            <div class="schedule-container" id="scheduleContainer">
+                <!-- Data dari JS -->
+            </div>
+        </section>
+
+        <!-- Genre Section -->
+        <section class="genre-section" id="genre">
+            <h2><i class="fas fa-tags"></i> Genre Anime</h2>
+            <div class="genre-grid" id="genreGrid">
+                <!-- Data dari JS -->
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Ditznime</h3>
+                    <p>Website streaming anime gratis dengan koleksi terlengkap. Update setiap hari!</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#ongoing">Ongoing</a></li>
+                        <li><a href="#complete">Complete</a></li>
+                        <li><a href="#schedule">Jadwal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Social Media</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ditznime. All rights reserved. | Made with <i class="fas fa-heart"></i> by Ditzz</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Anime Detail Modal -->
+    <div class="modal" id="animeModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Detail anime dari JS -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
